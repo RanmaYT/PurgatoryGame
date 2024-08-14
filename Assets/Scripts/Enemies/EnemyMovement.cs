@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     Transform target;
     Vector3 initialPos;
 
-    float speed = 1f;
+    public float speed = 1f;
     public bool facingRight;
 
     // Start is called before the first frame update

@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4954831986004002228, guid: 2683493f7002579478cbbccad58ce194, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533885405849448185, guid: 2683493f7002579478cbbccad58ce194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8596445761355384265, guid: 2683493f7002579478cbbccad58ce194, type: 3}
       propertyPath: m_Name
       value: SkeletonBoss Variant

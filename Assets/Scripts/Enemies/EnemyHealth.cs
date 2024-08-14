@@ -29,5 +29,7 @@ public class EnemyHealth : MonoBehaviour
 
         gameObject.GetComponent<EnemyMovement>().enabled = false;
         gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        this.enabled = false;
     }
 }

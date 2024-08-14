@@ -33,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         gameObject.GetComponent<PlayerMovement>().enabled = false;
         gameObject.GetComponent<PlayerAttack>().enabled = false;
         gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         this.enabled = false;
     }
 }

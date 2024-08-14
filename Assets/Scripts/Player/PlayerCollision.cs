@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
@@ -18,7 +19,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy") && ableToTakeDamage)
         {
-            playerHealth.currentHealth--;
+            playerHealth.currentHealth -= other.gameObject.GetComponent<EnemyAttack>().damage;
             StartCoroutine(TimerUntilNextDamage());
         }
 
@@ -33,7 +34,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy") && ableToTakeDamage)
         {
-            playerHealth.currentHealth--;
+            playerHealth.currentHealth -= other.gameObject.GetComponent<EnemyAttack>().damage;
             StartCoroutine(TimerUntilNextDamage());
         }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FireAttack : MonoBehaviour
 {
+    public int damage = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class FireAttack : MonoBehaviour
 
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<EnemyHealth>().currentHealth--;
+            other.gameObject.GetComponent<EnemyHealth>().currentHealth -= damage;
 
             Destroy(gameObject);
         }
